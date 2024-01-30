@@ -1,0 +1,356 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+#main{
+    position: relative;
+    overflow: hidden;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #1544c0;
+    position: relative;
+}
+
+#page1 #nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    padding-top: 20px;
+    position: fixed;
+    z-index: 9;
+    
+}
+#nav img{
+    height: 50px;
+}
+#nav #center{
+    display: flex;
+    gap: 20px;
+}
+#nav #center h4{
+    font-size: 14px;
+    font-weight: 500;
+    color: aliceblue;
+    
+}
+#nav>h4{
+    font-size: 16px;
+    font-weight: 500;
+    color: aliceblue;
+    width: 12%;
+}
+#page1 h1{
+    font-size: 22vw;
+    text-align: center;
+    /* margin-top: 20px; */
+    color: #96ffca;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#page1>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1).8s;
+}
+#page2{
+    height: 170vh;
+    width: 100%;
+    background-color: #1544c0;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    flex-direction: column;
+    padding-top: 100px;
+}
+#page2>h5{
+    font-size: 16px;
+    font-weight: 500;
+    color: aliceblue;
+    position: relative;
+    height: 120px;
+}
+
+#page2>h5::after{
+    content: "";
+    height: 7px;
+    width: 24px;
+    background-color: #96ffca;
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    transform: skewy(-16deg);
+    margin-top: 16px;
+}
+#page2 h3{
+    font-size: 3vw;
+    font-weight: 700;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 40px;
+}
+#page2 p{
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    color: aliceblue;
+    text-align: center;
+}
+#page2 #box{
+    min-height: 140vh;
+    width: 100%;
+    background-color: #214fc6;
+    transform: skewY(-15deg);
+    margin-top: 16vw;
+    position: relative;
+}
+
+#page2 #box img{
+    height: 50vw;
+    width: 40%;
+    top: -13.5%;
+    left: 0;
+    position: absolute;    
+}
+#page2 #box #first{
+    margin-left: 70px;
+}
+#page2 #box #secand{
+    margin-left: 55%;
+}
+#page2 #box h4{
+    font-size: 14px;
+    font-weight: 500;
+    color: aliceblue;
+    transform: skewY(15deg);
+    margin: 10% 47%;
+}
+#page2 #box h4::after{
+    content: "";
+    height: 7px;
+    width: 24px;
+    background-color: #96ffca;
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    transform: skewY(-16deg);
+    margin-top: 16px;
+}
+#page2 #box h2{
+    font-size: 3vw;
+    font-weight: 700;
+    color: aliceblue;
+    text-align: center;
+    margin-top: -50px;
+    transform: skewY(15deg);
+}
+#page3{
+    height: 160vh;
+    width: 100%;
+    background-color: #e7eeed;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#page3 #content{
+    height: 50%;
+    width: 35%;
+    /* background-color: #96ffca; */
+    padding-left: 180px;
+}
+#page3 #content h4{
+    font-size: 14px;
+    font-weight: 500;
+    color: #204abd;
+    
+}
+#page3 #content h1{
+    font-size: 6vw;
+    font-weight: 700;
+    color: #1e48bd;
+    line-height: 6vw;
+    margin-top: 10px;
+}
+#page3 #content h3{
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 30px;
+    color: rgb(37, 36, 36);
+}
+#page3 #content p{
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(70, 67, 67);
+    margin-top: 10px;
+}
+#page3 #icons{
+    margin-top: 20px;
+    
+}
+#page3 #content i{
+    font-size: 20px;
+    margin-right: 10px;
+    color: rgb(31, 29, 29);
+    
+}
+
+#page3 #images{
+    height: 62%;
+    width: 50%;
+    position: relative;
+    /* background-color: #96ffca; */
+}
+
+#page3 #images img{
+    height: 46vw;
+}
+#page3 #images #dog{
+    height: 38vw;
+    position: absolute;
+    left: 8%;
+    /* background-color: #1544c0; */
+}
+#page3 #images #uwear{
+    height: 38vw;
+    position: absolute;
+    top: 6%;
+    left: 12%;
+    /* background-color: #1544c0; */
+}
+#page3 #images #sleaper{
+    height: 38vw;
+    position: absolute;
+    top: 14%;
+    left: 12%;
+    /* background-color: #1544c0; */
+}
+#page4{
+    border-top: .8px solid rgb(211, 207, 207);
+    height: 160vh;
+    width: 100%;
+    background-color: #e7eeed;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#page4 #content{
+    height: 50%;
+    width: 35%;
+    /* background-color: #96ffca; */
+    padding-left: 180px;
+}
+#page4 #content h4{
+    font-size: 14px;
+    font-weight: 500;
+    color: #204abd;
+    
+}
+#page4 #content h1{
+    font-size: 6vw;
+    font-weight: 700;
+    color: #1e48bd;
+    line-height: 6vw;
+    margin-top: 10px;
+}
+#page4 #content h3{
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 30px;
+    color: rgb(37, 36, 36);
+}
+#page4 #content p{
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(70, 67, 67);
+    margin-top: 10px;
+}
+#page4 #icons{
+    margin-top: 20px;
+    
+}
+#page4 #content i{
+    font-size: 20px;
+    margin-right: 10px;
+    color: rgb(31, 29, 29);
+    
+}
+
+#page4 #images{
+    height: 62%;
+    width: 50%;
+    position: relative;
+    /* background-color: #96ffca; */
+}
+
+#page4 #images img{
+    height: 46vw;
+}
+#page4 #images #dog{
+    height: 38vw;
+    position: absolute;
+    left: 8%;
+    /* background-color: #1544c0; */
+}
+#page4 #images #uwear{
+    height: 38vw;
+    position: absolute;
+    top: 6%;
+    left: 12%;
+    /* background-color: #1544c0; */
+}
+#page4 #images #sleaper{
+    height: 38vw;
+    position: absolute;
+    top: 14%;
+    left: 12%;
+    /* background-color: #1544c0; */
+}
+#page5{
+    height: 77vh;
+    width: 100%;
+    background-color: #f4f7f5;
+    position: relative;
+    overflow: hidden;
+    border-top: .8px solid rgb(211, 207, 207);
+}
+#page5 img{
+    height: 50%;
+    width: 50%;
+    margin: 90px 350px;
+    
+}
+#page5 #hand{
+    height: 500px;
+    width: 200px;
+    margin: 90px 350px;
+    position: absolute;
+    top: -5%;
+    left: 18%;
+    
+}
+#page5 #icons{
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+}
+#page5 #icons i{
+    font-size: 20px;
+    margin-right: 5px;
+    color: rgb(31, 29, 29);
+}
